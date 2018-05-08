@@ -4,7 +4,7 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import com.joyfulmath.androidadvanceprogram.utils.TraceLog
 
-open class BaseActivity:AppCompatActivity() {
+open abstract class BaseActivity:AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         TraceLog.d(this.javaClass.simpleName)
